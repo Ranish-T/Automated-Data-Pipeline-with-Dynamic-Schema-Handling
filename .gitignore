@@ -216,3 +216,57 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==================================================
+# Project-specific ignores
+# Automated Data Pipeline with Dynamic Schema Handling
+# ==================================================
+
+# Local virtual environment
+myenv/
+
+# Python cache anywhere
+__pycache__/
+*.pyc
+*.pyo
+
+# Spark local/generated files
+spark-warehouse/
+metastore_db/
+.metastore_db/
+derby.log
+*.crc
+
+# Spark temporary directories
+.sparkStaging/
+_tmp/
+tmp/
+
+# Pipeline runtime logs
+logs/
+*.log
+
+# Generated processed datasets
+data/processed/
+
+# Quarantined datasets
+data/quarantine/
+
+# Temporary/staging datasets
+data/staging/
+data/temp/
+
+# Generated cleaned dataset copies
+reports/cleaned_data/
+
+# Large local test datasets
+data/input/*.parquet
+data/input/*.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
